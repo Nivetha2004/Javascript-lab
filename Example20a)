@@ -1,0 +1,14 @@
+// changing status line
+<FORM NAME="st">
+<INPUT TYPE ="TEXT" SIZE="65" NAME="input1"><BR> 
+<INPUT TYPE ="BUTTON" VALUE="Change" 
+onClick="window.status=document.st.input1.value;">
+</FORM>
+Example 20 (b)
+// Handling onChange event
+<FORM>
+<INPUT TYPE="text" 
+onChange=" if (parseInt(this.value) <= 5) {
+alert('Please enter a number greater than 5.');
+} ">
+</FORM>
